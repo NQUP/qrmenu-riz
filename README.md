@@ -43,10 +43,10 @@ Lalu paste:
 
 ## Repository
 
-- Owner: NQUP
+- Owner: NQUP (RIZQI AL FAREZA)
 - Email: rizqialfareza07@gmail.com
 - URL: https://github.com/NQUP/qrmenu-riz.git
 
 ## License
 
-MIT
+**MIT License.**
