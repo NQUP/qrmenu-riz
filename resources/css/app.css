@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+    body {
+        font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+        color: #0f172a;
+        background-color: #f8fafc;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 0.01em;
+    }
+
+    html.dark body {
+        color: #e2e8f0;
+        background-color: #020617;
+    }
+}
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+@layer components {
+    .admin-shell {
+        font-size: 16px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    .admin-shell .text-xs {
+        font-size: 0.9rem;
+        line-height: 1.35rem;
+    }
+
+    .admin-shell .text-sm {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .admin-shell h1,
+    .admin-shell h2 {
+        letter-spacing: 0.015em;
+    }
+}
