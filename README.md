@@ -24,3 +24,7 @@ php artisan serve
 
 - Owner: NQUP
 - URL: https://github.com/NQUP/qrmenu-riz.git
+
+## License
+
+MIT
