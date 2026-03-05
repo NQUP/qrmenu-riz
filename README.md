@@ -20,6 +20,27 @@ npm run dev
 php artisan serve
 ```
 
+## Login Admin
+
+- URL admin: `http://127.0.0.1:8000/admin`
+- Email (dev): `admin@qrmenu.local`
+- Password (dev): `admin12345`
+
+Jika akun belum ada, jalankan:
+
+```bash
+php artisan tinker
+```
+
+Lalu paste:
+
+```php
+\App\Models\User::updateOrCreate(
+    ['email' => 'admin@qrmenu.local'],
+    ['name' => 'Admin', 'password' => 'admin12345']
+);
+```
+
 ## Repository
 
 - Owner: NQUP
