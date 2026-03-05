@@ -44,6 +44,7 @@ Lalu paste:
 ## Repository
 
 - Owner: NQUP
+- Email: rizqialfareza07@gmail.com
 - URL: https://github.com/NQUP/qrmenu-riz.git
 
 ## License
